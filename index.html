@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kiran Academy — Coaching Classes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sp" id="sp"></div>
+<header><div class="wrap">
+  <a class="logo" href="#top"><b></b>Kiran Academy</a>
+  <nav aria-label="Main"><a href="#timings">Timings</a><a href="#courses">Courses</a><a href="#why">Why us</a><a href="#faq">FAQ</a><button class="tg" id="tg" aria-label="Toggle dark mode">◐</button><a class="cta" href="#enquiry">Enquire now</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero">
+  <div class="stars" id="stars" aria-hidden="true"></div><div class="rays" id="rays" aria-hidden="true"></div><div class="glow" id="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="sky"><span id="skyIco">☀️</span><span id="skyTxt"></span></div>
+      <h1>Every student has a <em>kiran</em>. We help it shine.</h1>
+      <p class="lead">Small batches, weekly tests and teachers who know every student by name. Classes for school boards and JEE / NEET, with timings you can check live.</p>
+      <a class="btn p" href="#enquiry">Book a free demo class</a><a class="btn g" href="#timings">See today's timetable</a>
+      <div class="chips"><span>Class 8–12</span><span>JEE / NEET</span><span>Weekly tests</span><span>Doubt sessions</span></div>
+    </div>
+    <div class="live" aria-live="off">
+      <div class="date" id="date"></div>
+      <div class="clock" id="clock">--:--:--</div>
+      <span class="badge" id="status"><i></i><span id="statusText">Checking…</span></span>
+      <div class="now"><b id="nowTitle"></b><span id="nowSub"></span><div class="bar" aria-hidden="true"><div id="prog"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats"><div class="wrap">
+<div><b data-c="cls">0</b><span>classes every week</span></div>
+<div><b data-c="days">0</b><span>days open per week</span></div>
+<div><b data-c="hrs">0</b><span>teaching hours a week</span></div>
+<div><b data-c="dbt">0</b><span>doubt hours a week</span></div>
+</div></div>
+<section id="today" class="rv"><div class="wrap">
+  <h2>Aaj ka din, ek nazar mein</h2>
+  <p class="sub">The red line is the time right now. The bright block is the class running at this moment.</p>
+  <div class="strip" id="strip"></div><div class="ticks" id="ticks"></div>
+</div></section>
+
+<section id="timings" style="padding-top:0"><div class="wrap">
+  <h2>Weekly timetable</h2>
+  <p class="sub">Pick any day. Today's running class is highlighted automatically.</p>
+  <div class="days" id="days" role="group" aria-label="Choose a day"></div>
+  <div class="tw"><table><thead><tr><th>Time</th><th>Batch and subject</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div>
+  <p class="note">These are sample timings. Send me the real schedule and I will update the page.</p>
+</div></section>
+
+<section id="courses" style="padding-top:0"><div class="wrap">
+  <h2>Our courses</h2>
+  <p class="sub">Choose the batch that matches your class and goal.</p>
+  <div class="grid">
+    <div class="course"><div class="ic">📘</div><h3>Class 8–10</h3><p>Maths, Science and English with weekly tests and homework review.</p></div>
+    <div class="course"><div class="ic">🔬</div><h3>Class 11–12</h3><p>Physics, Chemistry, Maths and Biology, planned around board exams.</p></div>
+    <div class="course"><div class="ic">🎯</div><h3>JEE / NEET</h3><p>Concept classes, daily practice problems and full-length mock tests.</p></div>
+    <div class="course"><div class="ic">💡</div><h3>Doubt sessions</h3><p>A fixed hour every day to clear doubts one-to-one with a teacher.</p></div>
+  </div>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <h2>Why parents choose Kiran</h2>
+  <p class="sub">Simple things, done every single day.</p>
+  <div class="grid">
+    <div class="item"><h3>Small batches</h3><p>Every child gets attention and a chance to ask.</p></div>
+    <div class="item"><h3>Weekly tests</h3><p>Progress is measured every week, not just before exams.</p></div>
+    <div class="item"><h3>Doubt hour</h3><p>No question is left for tomorrow.</p></div>
+    <div class="item"><h3>Parent updates</h3><p>Regular feedback on attendance and marks.</p></div>
+  </div>
+</div></section>
+
+<section id="finder" class="rv"><div class="wrap">
+  <h2>Find your batch in 10 seconds</h2>
+  <p class="sub">Tell us the class and goal. We will show the matching batch and its timings.</p>
+  <div class="fin">
+    <label>Student's class<select id="qc"><option value="8">Class 8–10</option><option value="11">Class 11–12</option></select></label>
+    <label>Main goal<select id="qg"><option value="b">Score well in board exams</option><option value="j">Crack JEE</option><option value="n">Crack NEET</option><option value="d">Clear doubts and basics</option></select></label>
+    <div class="res" id="res" role="status"></div>
+  </div>
+</div></section>
+
+<section id="teachers" class="rv"><div class="wrap">
+  <h2>Meet your teachers</h2>
+  <p class="sub">Add real names, subjects and experience here.</p>
+  <div class="grid">
+    <div class="course tch"><div class="av">M</div><h3>Maths Teacher</h3><p>Class 8–12, JEE</p></div>
+    <div class="course tch"><div class="av">P</div><h3>Physics Teacher</h3><p>Class 11–12, JEE / NEET</p></div>
+    <div class="course tch"><div class="av">C</div><h3>Chemistry Teacher</h3><p>Class 11–12, NEET</p></div>
+    <div class="course tch"><div class="av">B</div><h3>Biology Teacher</h3><p>Class 11–12, NEET</p></div>
+  </div>
+</div></section>
+
+<section id="voices" class="rv" style="padding-top:0"><div class="wrap">
+  <h2>What families say</h2>
+  <p class="sub">Sample reviews. Replace them with real ones from your parents and students.</p>
+  <div class="tst">
+    <div class="card"><q>Weekly tests kept my son on track. His confidence in Maths is much better now.</q><small>Parent, Class 10</small></div>
+    <div class="card"><q>The doubt hour is my favourite part. I never carry a question home unsolved.</q><small>Student, Class 12</small></div>
+    <div class="card"><q>Small batch, so teachers know each child. We get regular updates on marks.</q><small>Parent, Class 9</small></div>
+  </div>
+</div></section>
+
+<section id="faq" class="rv" style="padding-top:0"><div class="wrap">
+  <h2>Questions parents ask</h2>
+  <p class="sub">Edit these answers to match your academy.</p>
+  <details><summary>Can my child attend a demo class first?</summary><p>Yes. Use the form below to book a free demo class before you decide.</p></details>
+  <details><summary>How many students are in one batch?</summary><p>Add your batch size here. Small batches mean more attention per student.</p></details>
+  <details><summary>How do I know if the academy is open right now?</summary><p>The badge at the top of this page shows Open or Closed live, using India time.</p></details>
+  <details><summary>How are progress and marks shared?</summary><p>Weekly test marks and attendance are shared with parents regularly.</p></details>
+</div></section>
+
+<section id="enquiry"><div class="wrap enq">
+  <div>
+    <h2>Book a free demo class</h2>
+    <p class="sub">Fill in the details and we will get back to you. You can also message us directly on WhatsApp.</p>
+    <div class="card"><b>Kiran Academy</b><br>Pimpri, Maharashtra<br>Phone: <span id="ph">add number</span></div>
+  </div>
+  <div class="card">
+    <label>Student name<input id="fn" autocomplete="name" placeholder="e.g. Aarav Patil"></label>
+    <label>Class<select id="fc"><option>Class 8–10</option><option>Class 11–12</option><option>JEE / NEET</option></select></label>
+    <label>Parent phone<input id="fp" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number"></label>
+    <button class="send" id="send" type="button">Send on WhatsApp</button>
+    <p id="msg" role="status"></p>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="yr"></span> Kiran Academy · Pimpri, Maharashtra</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
